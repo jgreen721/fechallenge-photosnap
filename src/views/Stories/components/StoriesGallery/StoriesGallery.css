@@ -1,0 +1,19 @@
+.stories-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  z-index: 10;
+  position: relative;
+  /* border: 2px solid green; */
+}
+
+@media screen and (max-width: 768px) {
+  .stories-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .stories-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

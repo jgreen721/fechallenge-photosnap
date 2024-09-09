@@ -1,0 +1,49 @@
+.footer-media-link-item {
+  cursor: pointer;
+  transition: 0.25s ease-in;
+}
+
+.media-link {
+  color: white;
+  color: white;
+  font-size: 2.2rem;
+}
+
+.fa-facebook:hover {
+  background-image: linear-gradient(blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.fa-youtube:hover {
+  background-image: linear-gradient(red, rgb(229, 255, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.fa-twitter:hover {
+  background-image: linear-gradient(turquoise, rgb(47, 100, 71));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.fa-pinterest:hover {
+  background-image: linear-gradient(red, orange);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.fa-instagram:hover {
+  background-image: linear-gradient(skyblue, hotpink);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.footer-media-link-item:hover {
+  transform: scale(1.1) translateY(-0.25rem);
+}

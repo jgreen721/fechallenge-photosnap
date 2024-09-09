@@ -1,0 +1,68 @@
+.stories-hero {
+  position: relative;
+  width: 100%;
+  background-image: url("./assets/stories/desktop/moon-of-appalacia.jpg");
+  background-attachment: fixed;
+  height: 600px;
+}
+
+.stories-hero-img {
+  display: none;
+}
+
+.stories-hero-text-content-wrapper {
+  position: absolute;
+  z-index: 5;
+  inset: 0;
+  color: white;
+  padding: 12rem 11rem;
+}
+
+.hero-title {
+  margin: 1.5rem 0;
+}
+
+.hero-blurb {
+  margin: 1.5rem 0;
+  line-height: 2.5rem;
+}
+
+.stories-hero-text-content {
+  width: 40rem;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .stories-hero {
+    background-image: url("./assets/stories/tablet/moon-of-appalacia.jpg");
+  }
+  .stories-hero-text-content-wrapper {
+    padding: 12rem 3rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .stories-hero {
+    height: auto;
+    background-image: none;
+    background-attachment: unset;
+    position: relative;
+  }
+
+  .stories-hero-img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
+  .stories-hero-text-content-wrapper {
+    background: black;
+    width: auto;
+    padding: 6rem var(--mainPaddingX);
+    position: relative;
+  }
+
+  .stories-hero-text-content {
+    width: auto;
+  }
+}

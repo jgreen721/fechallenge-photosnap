@@ -1,0 +1,26 @@
+.burger-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.line {
+  width: 30px;
+  height: 3.5px;
+  background: var(--black);
+  margin: 0.35rem 0;
+  transition: 0.25s ease-in-out;
+}
+
+.burger-icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.rotate-left {
+  transform: rotate(45deg) translateY(0.45rem);
+}
+
+.rotate-right {
+  transform: rotate(-45deg) translateY(-0.5rem);
+}

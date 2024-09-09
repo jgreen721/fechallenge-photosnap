@@ -1,0 +1,16 @@
+.logo-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.logo-triangle {
+  height: 2rem;
+  width: 2rem;
+  background: var(--mainGradient);
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.logo-h2 {
+  text-transform: uppercase;
+  font-weight: 1000;
+}

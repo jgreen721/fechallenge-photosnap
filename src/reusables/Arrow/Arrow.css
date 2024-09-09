@@ -1,0 +1,33 @@
+.arrow {
+  width: 35px;
+  height: 2px;
+  /* background: white; */
+  position: relative;
+}
+
+.arrow::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  /* background: white; */
+  background: var(--color);
+  position: absolute;
+  top: 0;
+  right: -0.15rem;
+  transform: rotate(35deg);
+  transform-origin: right;
+}
+
+.arrow::after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  /* background: white; */
+  background: var(--color);
+
+  position: absolute;
+  top: 0;
+  right: -0.15rem;
+  transform: rotate(-35deg);
+  transform-origin: right;
+}

@@ -1,0 +1,11 @@
+.home-features-row {
+  display: flex;
+  gap: 2.5rem;
+  padding: 12rem var(--mainPaddingX);
+}
+
+@media screen and (max-width: 650px) {
+  .home-features-row {
+    flex-direction: column;
+  }
+}

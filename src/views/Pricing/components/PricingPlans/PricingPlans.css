@@ -1,0 +1,29 @@
+.pricing-plans-parent {
+  padding: 12rem var(--mainPaddingX);
+  overflow: hidden;
+}
+
+.plans-list {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .pricing-plans-parent {
+    padding: 4rem var(--mainPaddingX);
+  }
+  .plans-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .pricing-plans-parent {
+    padding: 3rem var(--mainPaddingX);
+  }
+
+  .pricing-plans-parent {
+    padding: 2rem var(--mainPaddingX);
+  }
+}

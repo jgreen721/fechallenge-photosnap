@@ -1,0 +1,86 @@
+.payment-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+  /* border: 2px solid red; */
+}
+
+.payment-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.payment-toggle {
+  position: relative;
+  width: 100px;
+  cursor: pointer;
+}
+
+.payment-toggle::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: -8.5px;
+  width: 65px;
+  height: 32px;
+  border-radius: 100px;
+  background: lightgray;
+  box-shadow: 4px 5px 7.5px rgba(25, 20, 25, 0.65),
+    -4px 5px 7.5px rgba(25, 20, 25, 0.15);
+}
+
+.payment-toggle::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: 20px;
+  border-radius: 100px;
+  border: 1px solid black;
+  background: var(--black);
+  transition: 0.25s ease;
+}
+
+.payment-toggle:hover::after {
+  opacity: 0.65;
+}
+
+.payment-toggle:checked::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: 50px;
+  border-radius: 100px;
+  border: 1px solid black;
+  background: var(--black);
+}
+
+.payment-toggle:checked::before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: -8.5px;
+  width: 65px;
+  height: 32px;
+  border-radius: 100px;
+  box-shadow: -4px 5px 7.5px rgba(25, 20, 25, 0.65),
+    4px 5px 7.5px rgba(25, 20, 25, 0.15);
+  transition: 0.25s ease;
+}
+
+.toggle-label {
+  font-weight: 700;
+}
+
+/* .selected {
+  font-weight: 700;
+} */
+
+.un-selected {
+  opacity: 65%;
+}

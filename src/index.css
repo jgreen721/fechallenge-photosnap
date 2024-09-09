@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  --black: rgb(0, 0, 0);
+  --lightgray: rgb(#dfdfdf);
+  --darkgray: rgb(125, 125, 125);
+  --mainGradient: linear-gradient(#ffc593, #bc7198, #5a77ff);
+  --white: #ffffff;
+  --mainFont: "DM Sans", sans-serif;
+  --mainPaddingX: 17rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.muted {
+  opacity: 65%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.mid-thin {
+  font-weight: 300;
+}
+
+.thin {
+  font-weight: 200;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.mobile {
+  display: none;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-start {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1050px) {
+  :root {
+    --mainPaddingX: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  :root {
+    --mainPaddingX: 2.4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  .p {
+    font-size: 1rem;
+  }
+
+  .desktop-tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}

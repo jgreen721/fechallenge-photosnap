@@ -1,0 +1,42 @@
+.read-more-btn {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem 0;
+  transition: 0.5s ease;
+  white-space: nowrap;
+
+  /* max-width: 15rem; */
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.start {
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.btn-arrow-div {
+  transition: 0.15s ease;
+}
+
+.read-more-btn:hover {
+  /* transform: scale(1.05); */
+  text-shadow: 2px 2px 5px black;
+}
+
+.read-more-btn:hover .btn-arrow-div {
+  transform: scaleX(1.2) translateX(-1.5rem);
+}
