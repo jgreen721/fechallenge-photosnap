@@ -26,19 +26,17 @@
   position:relative;
 } */
 
-.header-link h5{
+.header-link h5 {
   color: var(--black);
   text-transform: uppercase;
   transition: 0.25s ease;
-  position:relative;
+  position: relative;
 }
 
 .header-link-item:hover h5 {
   text-shadow: 1px 1px 1px var(--darkgray);
-  transform:scaleY(1.2);
-  
+  transform: scaleY(1.2);
 }
-
 
 .home-logo-link {
   color: black;
@@ -46,15 +44,13 @@
 }
 
 .home-logo-link:hover {
-  transform: rotate(-3deg)scale(1.1);
+  transform: rotate(-3deg) scale(1.1);
   transition: 0.1s ease;
-  text-shadow:1px 1px 5px rgba(15,15,10,.35);
+  text-shadow: 1px 1px 5px rgba(15, 15, 10, 0.35);
 }
-
-
 
 @media screen and (max-width: 550px) {
   .header {
     padding: 2rem;
-
+  }
 }
