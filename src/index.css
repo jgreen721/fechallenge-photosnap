@@ -105,7 +105,7 @@ p {
     --mainPaddingX: 4rem;
   }
 }
-
+/* 
 @media screen and (max-width: 550px) {
   :root {
     --mainPaddingX: 2.4rem;
@@ -130,4 +130,4 @@ p {
   .mobile {
     display: block;
   }
-}
+} */
