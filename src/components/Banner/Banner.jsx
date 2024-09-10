@@ -15,7 +15,7 @@ const Banner = () => {
             <div className="banner-content-col flex-start">
                 <div>
                     <h1 className="uppercase banner-h1">We're in beta</h1>
-                    <h1 className="uppercase banner-h1">Get your invite</h1>
+                    <h1 className="uppercase banner-h1">Get <em>your</em> invite</h1>
                     <h1 className="uppercase banner-h1">Today!</h1>
                 </div>
             </div>
