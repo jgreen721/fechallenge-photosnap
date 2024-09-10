@@ -1,4 +1,5 @@
 import React from 'react'
+import  Highlight  from '../Highlight/Highlight';
 import "./PricingPlan.css";
 
 
@@ -27,6 +28,9 @@ const PricingPlan = ({plan,isMonthly,inView}) => {
             <h5>per year</h5>
           </div>
         </div>
+        {/* <div className="mobile-highlight"> */}
+        {plan.id == 2 && <Highlight className="highlight"/>}
+        {/* </div> */}
     </div>
   )
 }

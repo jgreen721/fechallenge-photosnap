@@ -1,6 +1,8 @@
 .header {
   padding: 1rem var(--mainPaddingX);
   position: relative;
+  z-index: 15;
+  background: var(--white);
 }
 
 .header-content-row {

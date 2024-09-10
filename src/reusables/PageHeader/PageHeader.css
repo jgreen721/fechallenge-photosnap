@@ -2,12 +2,14 @@
   display: flex;
   background: var(--black);
   color: var(--white);
+  position: relative;
 }
 
 .desktop-header-col {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .page-header-content {
@@ -26,9 +28,14 @@
   display: none;
   background: var(--black);
   color: var(--white);
+  position: relative;
 }
 
-@media screen and (max-width: 450px) {
+.mobile-header-row {
+  position: relative;
+}
+
+@media screen and (max-width: 375px) {
   .desktop-tablet-header {
     display: none;
   }

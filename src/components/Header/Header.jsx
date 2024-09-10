@@ -1,15 +1,14 @@
-import React, {useState} from 'react'
+import React from 'react'
 import {Logo,Button,BurgerIcon,MobileMenu} from "../../reusables"
 import {Link} from "react-router-dom";
 import "./Header.css";
 
-const Header = () => {
+const Header = ({showMobile,setShowMobile}) => {
   const headerLinks = [
     {id:1,name:"Stories",href:"/stories"},
     {id:2,name:"Features",href:"/features"},
     {id:3,name:"Pricing",href:"/pricing"},
   ]
-  const [showMobile,setShowMobile] = useState(false);
 
 
   onresize=()=>{

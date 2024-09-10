@@ -9,3 +9,5 @@ export { default as StoryItem } from "./StoryItem/StoryItem";
 export { default as GalleryItem } from "./GalleryItem/GalleryItem";
 export { default as PageHeader } from "./PageHeader/PageHeader";
 export { default as PricingPlan } from "./PricingPlan/PricingPlan";
+export { default as Highlight } from "./Highlight/Highlight";
+export { default as BlurOverlay } from "./BlurOverlay/BlurOverlay";

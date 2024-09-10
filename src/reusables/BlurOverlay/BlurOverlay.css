@@ -1,0 +1,24 @@
+.blur-bg-overlay {
+  position: absolute;
+  inset: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 5;
+}
+
+.blur-bg-overlay::after {
+  content: "";
+  inset: 0;
+  opacity: 75%;
+  position: absolute;
+  background: black;
+}
+
+.blur-bg-overlay::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  backdrop-filter: blur(10px);
+}

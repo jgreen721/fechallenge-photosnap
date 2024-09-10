@@ -2,6 +2,7 @@ import React  from 'react'
 import "./GalleryItem.css";
 // import Arrow from "../Arrow/Arrow"
 import ReadStoryBtn from '../ReadStoryBtn/ReadStoryBtn';
+import Highlight from "../Highlight/Highlight"
 
 
 const GalleryItem = ({galleryItem,delay,inView}) => {
@@ -19,6 +20,9 @@ console.log("Delay",inView)
       </div>
      
       <ReadStoryBtn arrowSpace="space-between" id={galleryItem.id} delay={delay} inView={inView}/>
+      </div>
+      <div className="hovered-highlight">
+      <Highlight className="highlight"/>
       </div>
      </li>
   

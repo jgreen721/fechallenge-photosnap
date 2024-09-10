@@ -3,6 +3,7 @@
   position: relative;
   flex: 1;
   cursor: pointer;
+  transition: 0.25s ease-out;
 }
 
 .gallery-item-img {
@@ -38,6 +39,29 @@
 
 .gallery-item-author {
   font-weight: 300;
+}
+
+.hovered-highlight {
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.gallery-item:hover .hovered-highlight {
+  opacity: 1;
+}
+
+.gallery-item:nth-child(odd):hover {
+  transform: translateY(-1.5rem) rotate(2deg);
+  box-shadow: 2px 3px 5px rgba(15, 20, 20, 0.45),
+    4px 10px 15px rgba(15, 20, 20, 0.45);
+  z-index: 10;
+}
+
+.gallery-item:nth-child(even):hover {
+  transform: translateY(-1.5rem) rotate(-2deg);
+  box-shadow: 2px 3px 5px rgba(15, 20, 20, 0.45),
+    4px 10px 15px rgba(15, 20, 20, 0.45);
+  z-index: 10;
 }
 
 @media screen and (max-width: 425px) {

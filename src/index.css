@@ -17,7 +17,7 @@ html {
   --black: rgb(0, 0, 0);
   --lightgray: rgb(#dfdfdf);
   --darkgray: rgb(125, 125, 125);
-  --mainGradient: linear-gradient(#ffc593, #bc7198, #5a77ff);
+  --mainGradient: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
   --white: #ffffff;
   --mainFont: "DM Sans", sans-serif;
   --mainPaddingX: 17rem;
@@ -98,6 +98,10 @@ p {
 .flex-start {
   align-items: center;
   justify-content: flex-start;
+}
+
+.mx-2 {
+  margin-right: 2rem;
 }
 
 @media screen and (max-width: 1050px) {

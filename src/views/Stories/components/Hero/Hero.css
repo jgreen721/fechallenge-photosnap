@@ -1,21 +1,34 @@
 .stories-hero {
   position: relative;
+  height: 600px; /*to close a gap i cant otherwise figure out */
   width: 100%;
-  /* background-image: url("./assets/stories/desktop/moon-of-appalacia.jpg");
-  background-attachment: fixed;
-  height: 600px; */
+  overflow: hidden;
 }
 
-/* .stories-hero-img {
-  display: none;
-} */
+.stories-hero-img {
+  transition: 0.5s ease-in;
+}
+
+.stories-hero:hover .stories-hero-img {
+  transform: scale(1.1) rotate(-2deg);
+  filter: blur(3px);
+}
 
 .stories-hero-text-content-wrapper {
   position: absolute;
   z-index: 5;
   inset: 0;
   color: white;
-  padding: 12rem 11rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0rem var(--mainPaddingX);
+  transition: 0.2s ease;
+  filter: blur(1.5px);
+}
+
+.stories-hero:hover .stories-hero-text-content-wrapper {
+  filter: blur(0px);
 }
 
 .hero-title {
@@ -33,9 +46,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .stories-hero {
-    /* background-image: url("./assets/stories/tablet/moon-of-appalacia.jpg"); */
-  }
   .stories-hero-text-content-wrapper {
     padding: 12rem 3rem;
   }
@@ -44,15 +54,18 @@
 @media screen and (max-width: 375px) {
   .stories-hero {
     height: auto;
-    background-image: none;
-    background-attachment: unset;
-    position: relative;
+  }
+
+  .stories-hero:hover .stories-hero-img {
+    transform: scale(1) rotate(0deg);
+    filter: blur(0px);
   }
 
   .stories-hero-img {
     display: block;
     height: 100%;
     width: 100%;
+    min-width: 300px;
   }
 
   .stories-hero-text-content-wrapper {
@@ -60,6 +73,7 @@
     width: auto;
     padding: 6rem var(--mainPaddingX);
     position: relative;
+    filter: blur(0px);
   }
 
   .stories-hero-text-content {

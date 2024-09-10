@@ -14,6 +14,7 @@
 .show-mobile-menu {
   transform: scaleY(1);
   transition: 0.25s;
+  /* border: 3px solid red; */
 }
 
 .hide-mobile-menu {

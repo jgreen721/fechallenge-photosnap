@@ -25,7 +25,7 @@ const Banner = () => {
         </div> 
         <picture>
             <source media="(min-width:768px)" srcSet={bgBeta}/>
-            <source media="(min-width:425px)" srcSet={bgBetaTablet}/>
+            <source media="(min-width:375px)" srcSet={bgBetaTablet}/>
             <img style={{"--i":".25s"}} src={bgBetaMobile} className={`gallery-img ${inView ? 'clear-focus' : 'blur-element'}`} alt="story-img"/>
         </picture>
     </div>
