@@ -6,8 +6,10 @@
 
 .highlight {
   height: 7.5px;
-  width: 100%;
   position: absolute;
+  left: -225%;
+  left: 0;
+  width: 100%;
   background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
   top: 0;
 }
@@ -32,6 +34,14 @@
   position: absolute;
   background: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
   filter: blur(1.5px);
+}
+
+.hovered-highlight {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  inset: 0;
+  /* position: relative; */
 }
 
 @media screen and (max-width: 450px) {
