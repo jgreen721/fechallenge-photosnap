@@ -1,7 +1,8 @@
 .home-features-row {
-  display: flex;
-  gap: 2.5rem;
   padding: 12rem var(--mainPaddingX);
+  display: flex;
+  align-items: stretch;
+  gap: 2.5rem;
 }
 
 @media screen and (max-width: 650px) {

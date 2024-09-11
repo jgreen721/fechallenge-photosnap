@@ -4,7 +4,7 @@ import "./FeatureItem.css"
 const FeatureItem = ({item,inView}) => {
 
   return (
-    <div>
+    // <div>
     <div style={{'--i':`${item.id/4}s`}}  className={`feature-item ${inView ? 'rise-up' : 'lowered-element'}`}>
         <div>
             <img src={item.icon} alt="item-icon" />
@@ -14,7 +14,7 @@ const FeatureItem = ({item,inView}) => {
             <h4 className="feature-item-blurb">{item.blurb}</h4>
         </div>
     </div>
-    </div>
+    // </div>
   )
 }
 

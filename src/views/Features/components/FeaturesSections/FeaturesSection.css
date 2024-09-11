@@ -22,6 +22,9 @@
 }
 
 @media screen and (max-width: 650px) {
+  .features-section {
+    padding: 6rem var(--mainPaddingX);
+  }
   .features-grid {
     grid-template-columns: repeat(1, 1fr);
   }
